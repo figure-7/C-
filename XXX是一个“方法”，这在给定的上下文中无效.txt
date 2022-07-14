@@ -1,0 +1,3 @@
+出现这种错误的原因是：命名空间冲突，将调用写完整即可解决，即有多个同名的元数据方法，不知道调哪个
+例如：Convert.ToBase64String(resultArray, 0, resultArray.Length)
+要写成：System.Convert.ToBase64String(resultArray, 0, resultArray.Length)，即调用system下的
